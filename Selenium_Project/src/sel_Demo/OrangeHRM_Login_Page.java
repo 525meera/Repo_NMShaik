@@ -29,8 +29,32 @@ public class OrangeHRM_Login_Page
 		ele_Login_Button.click();
 		Thread.sleep(3000);
 		
+		By by_PIM =By.xpath("//span[text()='PIM']");
+		WebElement ele_PIM=driver.findElement(by_PIM);
+		ele_PIM.click();
 		
+//		By by_add_Employee =By.xpath("//a[text()='Add Employee']");
+//		WebElement ele_Add_employee=driver.findElement(by_add_Employee);
+//		ele_Add_employee.click();
+//		Thread.sleep(5000);
+//		
+//		By by_Employee_Name =By.xpath("//input[@fdprocessedid='mlsg9a']");
+//		WebElement ele_Employee_Name=driver.findElement(by_Employee_Name);
+//		ele_Employee_Name.sendKeys("NM Shaik");
+//		Thread.sleep(5000);
+//		
+//		By by_Employee_Id =By.xpath("//input[@fdprocessedid='t5itki']");
+//		WebElement ele_Employee_ID=driver.findElement(by_Employee_Id);
+//		ele_Employee_ID.sendKeys("123");
+//		Thread.sleep(5000);
+//		
+//		By by_Employee_status =By.xpath("(//div[@class='oxd-select-text oxd-select-text--active'])[1]");
+//		WebElement ele_Employee_status=driver.findElement(by_Employee_status);
+//		ele_Employee_status.click();
+		
+		Thread.sleep(5000);
 		driver.close();
+		
 		
 		
 	}

@@ -33,6 +33,10 @@ public class Navigation_CMD
 		driver.navigate().to("https://practicetestautomation.com/practice-test-login/");
 		Thread.sleep(5000);
 
+		//Go Back To Home Page
+		driver.navigate().back();//
+		Thread.sleep(5000);
+
 		//Go Back to Login Page
 		driver.navigate().forward();
 		Thread.sleep(5000);
