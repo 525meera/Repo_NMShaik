@@ -32,9 +32,9 @@ public class Amzazon_Add_cart
 		
 		Thread.sleep(3000);
 		
-		By by_add_cart_button=By.xpath("//div[@id='buyNow']");
-		WebElement ele_add_cart_button=driver.findElement(by_add_cart_button);
-		ele_add_cart_button.click();
+//		By by_add_cart_button=By.xpath("//div[@id='buyNow']");
+//		WebElement ele_add_cart_button=driver.findElement(by_add_cart_button);
+//		ele_add_cart_button.click();
 		
 		
 		
