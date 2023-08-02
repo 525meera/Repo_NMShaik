@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Tsrtc_com 
+public class W3_School 
 {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver=new ChromeDriver();
@@ -69,7 +69,7 @@ public class Tsrtc_com
 		WebElement ele_Not_Sure=driver.findElement(by_Not_Sure);
 		ele_Not_Sure.click();
 		
-		Thread.sleep(3000);
+		Thread.sleep(3000); 
 		
 		By by_Home_IMG2=By.xpath("//div[@id='pagetop']//a[@title='Home']");
 		WebElement ele_Home_IMG2=driver.findElement(by_Home_IMG2);
