@@ -48,5 +48,44 @@ public class Tsrtc_com
 		ele_select_cource1.click();
 		
 		Thread.sleep(3000);
+		
+		driver.navigate().back();
+		
+		Thread.sleep(3000);
+		
+		By by_bootcamp=By.xpath("//div[@class='w3-right w3-white']//a[@title='W3Schools Bootcamps']");
+		WebElement ele_bootcamp=driver.findElement(by_bootcamp);
+		ele_bootcamp.click();
+		
+		Thread.sleep(3000);
+		
+		By by_Home_IMG=By.xpath("//div[@id='pagetop']//a[@title='Home']");
+		WebElement ele_Home_IMG=driver.findElement(by_Home_IMG);
+		ele_Home_IMG.click();
+		
+		Thread.sleep(3000);
+		
+		By by_Not_Sure=By.xpath("//a[text()='Not Sure Where To Begin?']");
+		WebElement ele_Not_Sure=driver.findElement(by_Not_Sure);
+		ele_Not_Sure.click();
+		
+		Thread.sleep(3000);
+		
+		By by_Home_IMG2=By.xpath("//div[@id='pagetop']//a[@title='Home']");
+		WebElement ele_Home_IMG2=driver.findElement(by_Home_IMG2);
+		ele_Home_IMG2.click();
+		
+		Thread.sleep(3000);
+		
+		By by_Login_button=By.xpath("//a[@id='w3loginbtn']");
+		WebElement ele_Login_button=driver.findElement(by_Login_button);
+		ele_Login_button.click();
+		
+		Thread.sleep(3000);
+		
+		By by_Home_IMG3=By.xpath("//a[@class='TopBarMenuLegacy2_logo__08SSu']");
+		WebElement ele_Home_IMG3=driver.findElement(by_Home_IMG3);
+		ele_Home_IMG3.click();
+		
 	}
 }
