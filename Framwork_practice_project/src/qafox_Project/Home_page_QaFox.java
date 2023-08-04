@@ -17,25 +17,35 @@ public class Home_page_QaFox extends Based_class_Qafox
 	
 	public static By by_Click_login=By.xpath("//a[text()='Login']");
 
-	////WebElements
 
-	static WebElement ele_Continue_Button=driver.findElement(by_Continue_Button);
-	static WebElement ele_My_Account=driver.findElement(by_My_Account);
-	static WebElement ele_Click_login=driver.findElement(by_Click_login);
+
+	public static WebElement getele_Continue_Button()
+	{
+		return driver.findElement(by_Continue_Button);
+	}
+	static WebElement getele_My_Account()
+	{
+		return driver.findElement(by_My_Account);
+	}
+	static WebElement getele_Click_login()
+	{
+		return driver.findElement(by_Click_login);
+	
+	}
 
 	////Actions
 
 	public static void continue_button()
 	{
-		ele_Continue_Button.click();
+		getele_Continue_Button().click();
 	}
 	public static void my_Account()
 	{
-		ele_My_Account.click();
+		getele_My_Account().click();
 	}
 	public static void click_login()
 	{
-		ele_Click_login.click();
+		getele_Click_login().click();
 		//		String get_currentUrl=driver.getCurrentUrl();
 		//		System.out.println(get_currentUrl);
 	}

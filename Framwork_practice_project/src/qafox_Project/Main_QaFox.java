@@ -14,7 +14,7 @@ public class Main_QaFox extends Based_class_Qafox
 		
 		Thread.sleep(3000);
 		
-	//	Home_page_QaFox.continue_button();
+		Home_page_QaFox.continue_button();
 		
 	//	Thread.sleep(3000);
 		
