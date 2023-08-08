@@ -9,13 +9,14 @@ public class Home_page_QaFox extends Based_class_Qafox
 
 	public static By by_Continue_Button =By.xpath("//a[text()='Continue']");
 	public static By by_My_Account=By.xpath("//div[@id='top-links']//a[@title='My Account']");
-	
+
 	//public static By by_My_Account=By.xpath("//span[text()='My Account']");
 	//public static By by_My_Account=By.xpath("//li[@class='dropdown']//span[text()='My Account']");
 	//input[@name='search']
 	//static By by_My_Account=By.xpath("//li[@class='dropdown']//span[@class='hidden-xs hidden-sm hidden-md']");
-	
+
 	public static By by_Click_login=By.xpath("//a[text()='Login']");
+	
 
 
 
@@ -30,9 +31,9 @@ public class Home_page_QaFox extends Based_class_Qafox
 	static WebElement getele_Click_login()
 	{
 		return driver.findElement(by_Click_login);
-	
-	}
 
+	}
+	
 	////Actions
 
 	public static void continue_button()
@@ -49,6 +50,7 @@ public class Home_page_QaFox extends Based_class_Qafox
 		//		String get_currentUrl=driver.getCurrentUrl();
 		//		System.out.println(get_currentUrl);
 	}
+	
 
 
 }
