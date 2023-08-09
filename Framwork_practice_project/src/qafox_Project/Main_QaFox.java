@@ -26,7 +26,7 @@ public class Main_QaFox extends Based_class_Qafox
 		Home_page_QaFox.click_login();
 
 		Thread.sleep(3000);
-		
+
 		////Login_Page
 		Login_page_Qafox.userName("sonusallu143@gmail.com");
 
@@ -39,7 +39,7 @@ public class Main_QaFox extends Based_class_Qafox
 		Login_page_Qafox.login_button();
 
 		Thread.sleep(3000);
-
+		/*
 		///Desktop_page
 
 		Desktop_Page.select_navbar_Desktop();
@@ -109,25 +109,81 @@ public class Main_QaFox extends Based_class_Qafox
 		Components_page.all_components();
 
 		Thread.sleep(3000);
-		
+
 		////Tablets
 		Tablets_page.tablets();
-		
+
 		Thread.sleep(3000);
-		
+
 		Tablets_page.addcard();
-		
+
 		Thread.sleep(3000);
-		
+
 		///Software_page
-		
+
 		Software_page.saftware();
-		
+
 		Thread.sleep(3000);
-		
+
 		Software_page.continues();
-		
+
 		Thread.sleep(3000);
+
+		//Phones&PDAs_Page
+		Phones_PDAs_page.phones_page_tab();
+
+		Thread.sleep(3000);
+
+		Phones_PDAs_page.image_Click();
+
+		Thread.sleep(3000);
+
+		Phones_PDAs_page.quantity_Box("3");
+
+		Thread.sleep(3000);
+
+		Phones_PDAs_page.addcard();
+
+		Thread.sleep(3000);
+
+		///Cameras_page
+
+		Cameras_page.cameras_page();
+
+		Thread.sleep(3000);
+
+		Cameras_page.image_click();
+
+		Thread.sleep(3000);
+
+		Cameras_page.addcard_button();
+
+		Thread.sleep(3000);*/
+
+		///Mp3players
+
+		Mp3players.mp3players();
+
+		Thread.sleep(3000);
+
+		Mp3players.showallList();
+
+		Thread.sleep(3000);
+
+		Mp3players.listOfrows();
+
+		Thread.sleep(3000);
+
+		Mp3players.click_image();
+
+		Thread.sleep(3000);
+
+		Mp3players.addcart();
+
+		Thread.sleep(3000);
+
+
+
 
 		////logout_page
 		Logout_page.my_Account_click();
