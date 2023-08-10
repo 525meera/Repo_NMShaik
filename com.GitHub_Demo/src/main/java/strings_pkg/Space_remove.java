@@ -1,9 +1,11 @@
 package strings_pkg;
 
+import java.util.Scanner;
+
 public class Space_remove 
 {
 	public static void main(String[] args) {
-		String str="The Best world";
+		/*	String str="The Best world";
 		String space_rem = "";
 		char ch;
 		for(int i=0;i<str.length();i++) {
@@ -37,8 +39,9 @@ public class Space_remove
 		System.out.println(space_rem);*/
 
 
-
-		/*	String str=sc.nextLine();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the String Charecters");
+		String str=sc.nextLine();
 		char arr [] = str.toCharArray();
 		for(int i=0;i<arr.length;i++)
 		{
@@ -48,7 +51,7 @@ public class Space_remove
 
 			}
 
-		}*/
+		}
 
 
 	}
