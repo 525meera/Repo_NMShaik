@@ -13,4 +13,9 @@ public class Driver_Class
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
 	}
+	
+	static void browser_close()
+	{
+		driver.close();
+	}
 }

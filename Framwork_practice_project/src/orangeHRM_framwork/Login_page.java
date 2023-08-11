@@ -14,20 +14,17 @@ public class Login_page  extends Driver_Class
 	////webelement
 	public static WebElement ele_user_Name()
 	{
-		WebElement ele_userName=driver.findElement(by_userName);
-		return ele_userName;
+		
+		return driver.findElement(by_userName);
 	}
-	
 	public static WebElement ele_possward()
 	{
-		WebElement ele_possward=driver.findElement(by_possward);
-		return ele_possward;
+		return driver.findElement(by_possward);
 	}
-	
 	public static WebElement ele_Login_Button()
 	{
-		WebElement ele_login_Button=driver.findElement(by_click_login);
-		return ele_login_Button;
+		
+		return driver.findElement(by_click_login);
 	}
 
 	///actions
