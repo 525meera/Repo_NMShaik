@@ -11,16 +11,11 @@ public class Logout_page extends Driver_Class
 	////webelement
 	public static WebElement ele_profil()
 	{
-		WebElement ele_profil_Click=driver.findElement(by_profil_Click);
-		return ele_profil_Click;
+		return driver.findElement(by_profil_Click);
 	}
-	//	public static WebElement ele_profil_Click=driver.findElement(by_profil_Click);
-	//public static WebElement ele_by_Logout=driver.findElement(by_Logout_button);
-
 	public static WebElement ele_logout_button()
 	{
-		WebElement ele_Logout_button=driver.findElement(by_Logout_button);
-		return ele_Logout_button;
+		return driver.findElement(by_Logout_button);
 	}
 
 	///actions
