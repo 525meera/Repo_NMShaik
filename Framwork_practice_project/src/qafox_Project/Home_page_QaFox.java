@@ -19,7 +19,7 @@ public class Home_page_QaFox extends Based_class_Qafox
 	
 
 
-
+//Webelements
 	public static WebElement getele_Continue_Button()
 	{
 		return driver.findElement(by_Continue_Button);
