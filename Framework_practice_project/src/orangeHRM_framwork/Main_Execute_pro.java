@@ -14,7 +14,7 @@ public class Main_Execute_pro
 		Thread.sleep(3000);
 		
 		////addmin_page
-		Admin_page.admin_tab();
+	/*	Admin_page.admin_tab();
 		Thread.sleep(3000);
 		Admin_page.Click_addButton();
 		Thread.sleep(3000);
@@ -45,7 +45,19 @@ public class Main_Execute_pro
 		My_Info.LastName("Nagul");
 		Thread.sleep(5000);
 		My_Info.Save_Button();
+		Thread.sleep(5000);*/
+		
+		////Performance_Page
+		Performance_Page.Performance();
 		Thread.sleep(5000);
+		
+		////Buzz_Page
+		Buzz_Page.Buzz();
+		Thread.sleep(3000);
+		Buzz_Page.post_textbox("happy");
+		Thread.sleep(3000);
+		Buzz_Page.PostButton();
+		Thread.sleep(3000);
 		
 		//Logout_page
 		Logout_page.profil_Click();
