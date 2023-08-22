@@ -5,7 +5,7 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class NSE_TabPage extends Based_Class
+public class NSE_WindowHandling extends Based_Class
 {
 	//// xpaths 
 	public static By by_Nse_tabClick=By.xpath("//iframe[@id='moneyiframe']");
