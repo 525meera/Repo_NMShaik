@@ -5,11 +5,11 @@ public class Word_count
 	public static void main(String[] args) {
 
 
-		String str="The Best World";
+		String str="The ZtoH INIDA ITES PVT LTD";
 		int count=1;
 		int length=str.length();
 		char [] ch=str.toCharArray();
-		//System.out.println(ch);
+		
 		for(int i=0;i<length;i++)
 		{
 			if(ch[i]==' ')
@@ -26,7 +26,9 @@ public class Word_count
 					}
 				}
 			}
+						
 		}
+		
 		System.out.println(count);
 
 	}

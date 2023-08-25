@@ -47,7 +47,7 @@ public class Selenium_Waits
 	{
 		By by_Button1=By.xpath("//button[@id='btn1']");
 		WebElement ele_Button1=driver.findElement(by_Button1);
-		FluentWait wait=new FluentWait (driver);
+		FluentWait<WebDriver> wait=new FluentWait<WebDriver> (driver);
 		wait.withTimeout(Duration.ofSeconds(20));
 		wait.pollingEvery(Duration.ofSeconds(5));
 		ele_Button1.click();
