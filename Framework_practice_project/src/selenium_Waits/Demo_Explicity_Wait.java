@@ -2,6 +2,7 @@ package selenium_Waits;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class Demo_Explicity_Wait extends Demo_cyclos_Based
 {
@@ -17,7 +18,7 @@ public class Demo_Explicity_Wait extends Demo_cyclos_Based
 	//Action
 		public static void expliciti_wait() 
 		{
-			//explicitiwait();
+			//explicitiwait(ele_userName(), 20);
 			//wait.until(ExpectedConditions.visibilityOfAllElements(ele_userName()));
 			
 			ele_userName().click();

@@ -11,14 +11,14 @@ public class Demo_Fleunt_Wait extends Demo_cyclos_Based
 	public static WebElement ele_userName()
 	{
 
-		fleuntwait();
+		//fleuntwait();
 		return driver.findElement(by_userName);
 	}
 	//action
 	public static void fleunt_wait() throws InterruptedException
 	{
 
-		//	Thread.sleep(3000);
 		ele_userName().click();
+		ele_userName().sendKeys("demo");
 	}
 }
