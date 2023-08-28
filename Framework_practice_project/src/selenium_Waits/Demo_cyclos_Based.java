@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Demo_cyclos_Based 
 {
 	static WebDriver driver;
-	public static WebDriverWait wait;
+	static WebDriverWait wait;
 	static FluentWait<WebDriver> fleuntwait;
 
 	public static void browser_Launch()
@@ -26,24 +26,42 @@ public class Demo_cyclos_Based
 
 		driver.manage().window().maximize();
 	}
+
 	public static void implicitywait()
 	{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
+
+	public static void explicitiwait()
+	{
+		wait=new WebDriverWait(driver, Duration.ofSeconds(30));
+		//wait.until(ExpectedConditions.visibilityOfAllElements(ele));
+	}
+
+
 	public static void explicitiwait(WebElement ele, int time)
 	{
 		wait=new WebDriverWait(driver, Duration.ofSeconds(time));
 		wait.until(ExpectedConditions.visibilityOfAllElements(ele));
 	}
-	
-//	public static void explicitiwait(By ele, int time)
-//	{
-//		wait=new WebDriverWait(driver, Duration.ofSeconds(time));
-//	}
+
+	public static void explicitiwait(By by_userName, int time)
+	{
+		wait=new WebDriverWait(driver, Duration.ofSeconds(time));
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(by_userName));
+	}
+
+	public static void fleuntwait(By by_userName,int time,int sec)
+	{
+		fleuntwait=new FluentWait<WebDriver>(driver);
+		fleuntwait.withTimeout(Duration.ofSeconds(time));
+		fleuntwait.pollingEvery(Duration.ofSeconds(sec));
+	}
+
 	public static void fleuntwait()
 	{
 		fleuntwait=new FluentWait<WebDriver>(driver);
-		fleuntwait.withTimeout(Duration.ofSeconds(30));
+		fleuntwait.withTimeout(Duration.ofSeconds(20));
 		fleuntwait.pollingEvery(Duration.ofSeconds(5));
 	}
 }
