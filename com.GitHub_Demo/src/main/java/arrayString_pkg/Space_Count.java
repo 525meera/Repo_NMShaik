@@ -1,7 +1,5 @@
 package arrayString_pkg;
 
-
-
 public class Space_Count
 {
 	public static void main(String[] args) 
