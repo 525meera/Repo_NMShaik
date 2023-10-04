@@ -16,9 +16,9 @@ public class String_Methods
 		System.out.println("Return Substring Start:- "+s11.substring(2));//returns vatpoint 
 
 		String contains="what do you know about me";  
-		System.out.println("True or false after matching the sequence of char value :- "+contains.contains("do you know"));  
-		System.out.println("True or false after matching the sequence of char value :- "+contains.contains("about"));  
-		System.out.println("True or false after matching the sequence of char value :- "+contains.contains("hello"));  
+		System.out.println("True or false after matching the sequence of char value :- "+contains.contains("do you know"));//true
+		System.out.println("True or false after matching the sequence of char value :- "+contains.contains("about"));// true
+		System.out.println("True or false after matching the sequence of char value :- "+contains.contains("hello")); // false
 
 		String s1="javatpoint";  
 		String s2="javatpoint";  
@@ -30,13 +30,13 @@ public class String_Methods
 
 		String isEmpty="";  
 		String isData="javatpoint";  
-		System.out.println("It checks if string is empty:- "+isEmpty.isEmpty());  
-		System.out.println("It checks if string is empty:- "+isData.isEmpty()); 
+		System.out.println("It checks if string is empty:- "+isEmpty.isEmpty());// true  
+		System.out.println("It checks if string is empty:- "+isData.isEmpty());// false 
 
 		String str="How are";
 		System.out.println(str.concat(" you"));
 		str=str.concat(" Am Good");
-		System.out.println("Concatenates the specified string :- "+str);
+		System.out.println("Concatenates the specified string :- "+str);// adding the referance
 
 		String replace="javatpoint is a very good website";  
 		String replaceString=replace.replace('a','e');//replaces all occurrences of 'a' to 'e'  
@@ -45,6 +45,7 @@ public class String_Methods
 
 		String sto="how are you";
 		String [] split=sto.split(" ");
+		// remove the space
 		for(String word:split)
 		{
 			System.out.print(word);
@@ -52,6 +53,7 @@ public class String_Methods
 		System.out.println();
 
 		String string="how are you am Good";
+		//remove the space of the index
 		String [] split2=string.split(" ", 2);
 		for(String word2:split2)
 		{

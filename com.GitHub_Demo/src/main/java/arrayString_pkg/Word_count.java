@@ -5,7 +5,7 @@ public class Word_count
 	public static void main(String[] args) {
 
 
-		String str="The ZtoH INIDA ITES PVT LTD";
+		String str="  The ZtoH INIDA ITES PVT LTD   ";
 		int count=1;
 		int length=str.length();
 		char [] ch=str.toCharArray();
